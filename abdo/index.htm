@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home Work for JS Course</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+
+<table border="1" class="tableContent">
+    <button id="openInsertDialogButton" class="btn btn-primary" >Add New Record</button>
+    <thead>
+        <tr>
+            <th >Number</th>
+            <th >Name</th>
+            <th >Age</th>
+            <th >Math Mark</th>
+            <th >History Mark</th>
+            <th >Science Mark</th>
+        </tr>
+    </thead>
+    <tbody id="studentsTableBody">
+    </tbody>
+</table>
+
+<div class="modal" id="insertDialogModal">
+    <div class="modal-dialog">
+        <div class="modal-content" style="overflow: hidden;">
+            <div class="modal-header">
+                <h4 class="modal-title">Insert Data</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="insertForm">
+                    <div class="form-group">
+                        <label for="number">Number:</label>
+                        <input type="text" class="form-control" id="id" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="age">Age:</label>
+                        <input type="number" class="form-control" id="age" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="math">Math Mark:</label>
+                        <input type="number" class="form-control" id="sub1" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="history">  History Mark:</label>
+                        <input type="number" class="form-control" id="sub2" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="science">Science Mark :</label>
+                        <input type="number" class="form-control" id="sub3" required>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer"  style="position: relative; bottom:185px; right: 60px;">
+                <button type="button" class="btn btn-success" id="insertData" onclick="insert()">Insert</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

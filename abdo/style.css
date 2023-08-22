@@ -1,0 +1,48 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    flex-direction: column;
+}
+
+.tableContent{
+    margin-top: 200px;
+}
+.tableContent thead tr th{
+    padding:5px 20px;
+}
+
+.tableContent tbody tr{
+    text-align: center;
+    color: rgb(54, 54, 159);
+    font-weight: bold;
+}
+button{
+    position: relative;
+    right: 260px;
+    top: 195px;
+}
+.dialog-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.dialog-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.close-button {
+    margin-top: 10px;
+    cursor: pointer;
+}
